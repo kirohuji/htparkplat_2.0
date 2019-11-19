@@ -1,0 +1,22 @@
+{
+  "editor.tabSize": 2,
+  //html格式化依赖  默认为none
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  // vscode默认启用了根据文件类型自动设置tabsize的选项
+  "editor.detectIndentation": false,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    }
+  ],
+}
