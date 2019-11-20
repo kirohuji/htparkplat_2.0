@@ -10,7 +10,7 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      redirect: '/home/panel'
+      redirect: '/home/dashboard'
     },
     ...generateRoutesFromMenu(menuModule.state.items)]
 })

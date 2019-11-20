@@ -11,7 +11,7 @@ export default {
     auth: true,
     show: true
   },
-  component: lazyLoading('default', true),
+  component: lazyLoading('calculate/Detail'),
   children: [
     loadDefault('calculate'),
     {

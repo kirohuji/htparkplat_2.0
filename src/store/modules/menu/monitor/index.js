@@ -10,7 +10,7 @@ export default {
     auth: true,
     show: true
   },
-  component: lazyLoading('default', true),
+  component: lazyLoading('monitor/Index'),
   children: [
     loadDefault('monitor'),
     {

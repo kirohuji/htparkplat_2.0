@@ -13,7 +13,18 @@ export default {
   },
   component: lazyLoading('default', true),
   children: [
-    loadDefault('home'),
+    {
+      name: '/',
+      path: '/',
+      component: lazyLoading('home/Dashboard'),
+      keepAlive: true,
+      meta: {
+        label: '能源看板',
+        link: '/home/dashboard',
+        show: false,
+        description: '能源看板'
+      }
+    },
     {
       name: 'dashboard',
       path: 'dashboard',
