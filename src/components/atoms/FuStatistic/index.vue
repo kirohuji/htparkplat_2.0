@@ -16,8 +16,8 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
-.statistic
+<style lang="less" scoped>
+.statistic {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -26,12 +26,15 @@ export default {
   font-variant: tabular-nums;
   line-height: 1.5;
   list-style: none;
-  font-feature-settings: 'tnum';
-  .label
+  font-feature-settings: "tnum";
+  .label {
     margin-bottom: 4px;
     color: rgba(0, 0, 0, 0.45);
     font-size: 14px;
-  .value
+  }
+  .value {
     color: rgba(0, 0, 0, 0.85);
     font-size: 24px;
+  }
+}
 </style>

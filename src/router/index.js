@@ -1,27 +1,30 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-
-Vue.use(VueRouter)
-
-const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
-]
-
-const router = new VueRouter({
-  routes
+import Router from 'vue-router'
+import menuModule from '@/store/modules/menu'
+// noinspection JSUnresolvedFunction
+Vue.use(Router)
+// eslint-disable-next-line no-new
+const router = new Router({
+  mode: 'hash',
+  base: process.env.BASE_URL,
+  routes: [
+    {
+      path: '/',
+      redirect: '/home/panel'
+    },
+    ...generateRoutesFromMenu(menuModule.state.items)]
 })
-
+// Menu should have 2 levels.
+function generateRoutesFromMenu (menu = [], routes = []) {
+  for (let i = 0, l = menu.length; i < l; i++) {
+    let item = menu[i]
+    if (item.path) {
+      routes.push(item)
+    }
+    if (!item.component) {
+      generateRoutesFromMenu(item.children, routes)
+    }
+  }
+  return routes
+}
 export default router

@@ -58,11 +58,11 @@ export default {
   }
 }
 </script>
-<style lang="stylus" scoped>
+<style lang="less" scoped>
 .skeleton-box {
   display: inline-block;
   vertical-align: middle;
-  background-color: #DDDBDD;
+  background-color: #dddbdd;
   position: relative;
   overflow: hidden;
   border-radius: 5px;
@@ -82,7 +82,7 @@ export default {
       rgba(#fff, 0)
     );
     animation: shimmer 2s infinite;
-    content: '';
+    content: "";
 
     @keyframes shimmer {
       100% {

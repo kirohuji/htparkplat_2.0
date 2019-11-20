@@ -144,14 +144,17 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-.header-search
+<style lang="less">
+.header-search {
   font-size: 0 !important;
-  .search-icon
+
+  .search-icon {
     cursor: pointer;
     font-size: 18px;
     vertical-align: middle;
-  .header-search-select
+  }
+
+  .header-search-select {
     font-size: 18px;
     transition: width 0.2s;
     width: 0;
@@ -160,8 +163,9 @@ export default {
     border-radius: 0;
     display: inline-block;
     vertical-align: middle;
-    /deep/ .el-input.is-focus
-      /deep/ .el-input__inner
+
+    /deep/ .el-input.is-focus {
+      /deep/ .el-input__inner {
         border-radius: 0;
         border: 0;
         padding-left: 0;
@@ -169,8 +173,15 @@ export default {
         box-shadow: none !important;
         border-bottom: 1px solid #d9d9d9;
         vertical-align: middle;
-  &.show
-    .header-search-select
-      width: 210px;
-      margin-left: 10px;
+      }
+    }
+
+    &.show {
+      .header-search-select {
+        width: 210px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
 </style>

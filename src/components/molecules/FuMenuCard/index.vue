@@ -66,17 +66,23 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-.text
+<style lang="less" scoped>
+.text {
   font-size: 14px;
-.item
+}
+.item {
   margin-bottom: 18px;
-.clearfix:before, .clearfix:after
+}
+.clearfix:before,
+.clearfix:after {
   display: table;
-  content: '';
-.clearfix:after
+  content: "";
+}
+.clearfix:after {
   clear: both;
-.box-card
+}
+.box-card {
   width: 100%;
   height: 150px;
+}
 </style>
