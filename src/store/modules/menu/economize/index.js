@@ -4,7 +4,7 @@ export default {
   path: '/economize',
   meta: {
     icon: 'el-icon-connection',
-    label: '能效对标',
+    label: '能效分析',
     link: '/economize',
     expanded: true,
     auth: true,
@@ -18,10 +18,10 @@ export default {
       path: 'target',
       component: lazyLoading('economize/Target'),
       meta: {
-        label: '详细信息',
+        label: '能耗统计',
         link: '/economize/target',
         show: true,
-        description: '详细信息'
+        description: '能耗统计'
       }
     }
   ]

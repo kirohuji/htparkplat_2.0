@@ -9,7 +9,7 @@
         <el-table-column label="角色名称"
                          prop="roleName">
         </el-table-column>
-        <el-table-column label="角色描述"
+        <el-table-column label="描述"
                          prop="extra">
         </el-table-column>
         <el-table-column align="right">
@@ -37,10 +37,10 @@ export default {
   data () {
     return {
       tableData: [
-        { index: 1, roleName: '超级管理员', permissionName: '-', extra: '所有页面功能，能进行修改操作' },
+        { index: 1, roleName: '超级管理员', permissionName: '-', extra: '拥有所有权限,所有网页功能' },
         { index: 2, roleName: '管理员', permissionName: '-', extra: '所有页面功能，能进行部分修改操作' },
         { index: 3, roleName: '普通用户', permissionName: '-', extra: '所有页面功能，不能进行部分修改操作' },
-        { index: 4, roleName: '企业用户', permissionName: '-', extra: '查看本企业信息' }],
+        { index: 4, roleName: '企业用户', permissionName: '-', extra: '只能查看本本企业信息,进行部分修改操作' }],
       search: ''
     }
   },

@@ -14,18 +14,8 @@
         >
         </el-table-column>
         <el-table-column
-          label="时间"
+          label="上报时间"
           prop="time"
-        >
-        </el-table-column>
-        <el-table-column
-          label="运行状态"
-          prop="status"
-        >
-        </el-table-column>
-        <el-table-column
-          label="综合能耗"
-          prop="synthesize"
         >
         </el-table-column>
         <el-table-column
@@ -82,12 +72,12 @@ export default {
           company: '伊泰煤制油',
           feedCoal: [320, 421, 590],
           bunkerCoal: [489, 568, 489],
-          status: '正在运行',
-          time: '2019/11/16',
-          synthesize: 3795.65215,
-          electric: 78.75,
-          water: 9899,
-          coal: 3857,
+          status: 0,
+          time: '2019/11/11',
+          synthesize: 2800,
+          electric: 80,
+          water: 8000,
+          coal: 4000,
           gas: 0,
           feedCoalTotal: 320 + 421 + 590,
           bunkerCoalTotal: 489 + 568 + 489
@@ -97,11 +87,11 @@ export default {
           company: '久泰能源',
           feedCoal: [201, 198, 219],
           bunkerCoal: [189, 298, 366],
-          status: '正在运行',
-          time: '2019/11/16',
-          synthesize: 1653.8,
-          electric: 148.8,
-          water: 11200,
+          status: 1,
+          time: '2019/11/18',
+          synthesize: 1500,
+          electric: 105,
+          water: 13700,
           coal: 0,
           gas: 0
         },
@@ -110,24 +100,24 @@ export default {
           company: '中科合成油',
           feedCoal: [201],
           bunkerCoal: [189],
-          status: '正在运行',
+          status: 1,
           time: '2019/11/16',
-          synthesize: 8,
-          electric: 8,
-          water: 24,
+          synthesize: 8.647285008,
+          electric: 6.0,
+          water: 30,
           coal: 0,
-          gas: 1676.4
+          gas: 1700
         },
         {
           number: 4,
           company: '天润化肥',
           feedCoal: [0],
           bunkerCoal: [12329],
-          status: '正在运行',
-          time: '2019/11/16',
-          synthesize: 1233.33022,
-          electric: 6,
-          water: 23761,
+          status: 0,
+          time: '2019/11/18',
+          synthesize: 1200,
+          electric: 8,
+          water: 13000,
           coal: 0,
           gas: 0
         },
@@ -136,12 +126,12 @@ export default {
           company: '西北能化',
           feedCoal: [201, 198],
           bunkerCoal: [189, 298, 366],
-          status: '正在运行',
-          time: '2019/11/16',
-          synthesize: 1086.2142,
-          electric: 22.1,
-          water: 834.93,
-          coal: 2107,
+          status: 0,
+          time: '2019/11/12',
+          synthesize: 1200,
+          electric: 30,
+          water: 800,
+          coal: 1800,
           gas: 0
         },
         {
@@ -149,12 +139,12 @@ export default {
           company: '易高煤化',
           feedCoal: [424.5],
           bunkerCoal: [3],
-          status: '正在运行',
-          time: '2019/11/16',
-          synthesize: 1322.16255,
-          electric: 55.9,
-          water: 3422,
-          coal: 424.5 + 1195,
+          status: 1,
+          time: '2019/11/13',
+          synthesize: 2000,
+          electric: 80,
+          water: 10000,
+          coal: 1900,
           gas: 0
         },
         {
@@ -162,12 +152,12 @@ export default {
           company: '伊东东华',
           feedCoal: [201, 198, 219, 267],
           bunkerCoal: [189],
-          status: '正在运行',
-          time: '2019/11/16',
-          synthesize: 3781.9247,
-          electric: 59.3,
-          water: 17622,
-          coal: 3982,
+          status: 0,
+          time: '2019/11/12',
+          synthesize: 4000,
+          electric: 60,
+          water: 12500,
+          coal: 3700,
           gas: 0
         },
         {
@@ -175,13 +165,13 @@ export default {
           company: '晶阳能源',
           feedCoal: [201],
           bunkerCoal: [189],
-          status: '正在运行',
-          time: '2019/11/16',
-          synthesize: 625.7663746,
-          electric: 140.6,
-          water: 3615,
-          coal: 196.6,
-          gas: 15548
+          status: 0,
+          time: '2019/11/11',
+          synthesize: 625,
+          electric: 140,
+          water: 3600,
+          coal: 2500,
+          gas: 18000
         }
       ],
       search: ''

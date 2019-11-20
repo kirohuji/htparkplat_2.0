@@ -24,30 +24,30 @@ export default {
         description: '企业上报',
         content: '企业上报'
       }
-    },
-    {
-      name: 'warn',
-      path: 'warn',
-      component: lazyLoading('parameter/Warn'),
-      meta: {
-        label: '报表系统',
-        link: '/parameter/warn',
-        show: true,
-        description: '报表系统',
-        content: '报表系统'
-      }
-    },
-    {
-      name: 'tear',
-      path: 'tear',
-      component: lazyLoading('parameter/Tear'),
-      meta: {
-        label: '智能抄表',
-        link: '/parameter/tear',
-        show: true,
-        description: '智能抄表',
-        content: '智能抄表'
-      }
     }
+    // {
+    //   name: 'warn',
+    //   path: 'warn',
+    //   component: lazyLoading('parameter/Warn'),
+    //   meta: {
+    //     label: '报表系统',
+    //     link: '/parameter/warn',
+    //     show: true,
+    //     description: '报表系统',
+    //     content: '报表系统'
+    //   }
+    // },
+    // {
+    //   name: 'tear',
+    //   path: 'tear',
+    //   component: lazyLoading('parameter/Tear'),
+    //   meta: {
+    //     label: '智能抄表',
+    //     link: '/parameter/tear',
+    //     show: true,
+    //     description: '智能抄表',
+    //     content: '智能抄表'
+    //   }
+    // }
   ]
 }

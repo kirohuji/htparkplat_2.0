@@ -11,7 +11,7 @@
       <keep-alive>
         <div class="flex_layout right">
           <slot name="right">
-            <fu-header-search class="right-menu-item" />
+            <!-- <fu-header-search class="right-menu-item" /> -->
             <fu-screenfull class="right-menu-item" />
             <fu-user-dropdown class="avatar-container right-menu-item hover-effect" />
           </slot>

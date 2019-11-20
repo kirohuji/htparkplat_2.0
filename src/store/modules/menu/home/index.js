@@ -36,6 +36,17 @@ export default {
         show: true,
         description: '工作台'
       }
+    },
+    {
+      name: 'map',
+      path: 'map',
+      component: lazyLoading('home/Map'),
+      meta: {
+        label: '地图展示',
+        link: '/home/map',
+        show: true,
+        description: '地图展示'
+      }
     }
   ]
 }
